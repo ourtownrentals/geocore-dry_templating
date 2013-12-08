@@ -1,0 +1,4 @@
+{
+  "name"  : "geocore-dry_templating",
+  "files" : [ { "git" : 1 } ]
+}
