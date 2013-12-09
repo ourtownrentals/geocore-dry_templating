@@ -2,8 +2,8 @@
 <form action="" method="post">
   <fieldset>
     <legend>Page Groups</legend>
-    <p>Each line associates a set of page ids with a page group name. Group names must contain letters and underscores only.</p>
     <div>
+      <p class="page_note">Each line associates a set of page ids with a page group name. Group names must contain letters and underscores only.</p>
       <table>
         <thead>
           <tr class="col_hdr_top">
@@ -13,7 +13,7 @@
           </tr>
         </thead>
         <tbody>
-        {foreach from=$page_groups item="page_group"}
+        {foreach $page_groups as $page_group}
           <tr class="{cycle values='row_color1,row_color2'}">
             <td class="{$row_color}"><input type="checkbox" name="page_groups[{$page_group.id}][remove]" value="1" /></td>
             <td class="{$row_color}"><input type="text" size="25" name="page_groups[{$page_group.id}][name]" value="{$page_group.name}" /></td>
