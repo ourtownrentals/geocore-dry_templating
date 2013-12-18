@@ -4,6 +4,11 @@
  */
 class addon_dry_templating_util extends addon_dry_templating_info
 {
+  /**
+  * @param Integer $page_id
+  *
+  * @return Array page group names which are assigned to the page id
+  */
   public function getPageGroups ($page_id)
   {
     $page_groups = geoAddon::getRegistry($this->name)->page_groups;
