@@ -17,6 +17,9 @@ class addon_dry_templating_info
   public $info_url = 'https://github.com/razor-x/geocore-dry_templating';
 
   public $tags = array(
-    'template'
+    'template',
+    'content'
   );
+
+  const CONTENT_TABLE = '`geodesic_addon_dry_templating_content`';
 }

@@ -22,4 +22,14 @@ class addon_dry_templating_util extends addon_dry_templating_info
 
     return array_values($matches);
   }
+
+  /**
+  *
+  */
+  public function getContent ($page_id, $category_id, $region_id)
+  {
+    $content_groups = geoAddon::getRegistry($this->name)->content_groups;
+
+    return array();
+  }
 }
